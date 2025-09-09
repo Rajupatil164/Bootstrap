@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Page</title>
+        <link 
+            rel="stylesheet" 
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"
+        />
+        <style>
+            body {
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .hero {
+                background: linear-gradient(to right, #007bff, #754908);
+                color: white;
+                padding: 100px 0;
+                text-align: center;
+            }
+            .card img {
+                height: 200px;
+                object-fit: cover;
+            }
+            footer {
+                background-color: #343a40;
+                color: white;
+                text-align: center;
+                padding: 20px 0;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class = "container">
+                <a class="navbar-brand fw-bold" href="#">MyBrand</a>
+                <button 
+                    class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <div class="container">
+                <h1 class="display-4 fw-bold">Welcome to MyBrand</h1>
+                <p class="lead">Your one-stop solution for all your needs.</p>
+                <a href="#" class="btn btn-light btn-lg mt-3">Get Started</a>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <div class="card shadow border-0 mb-4">
+                         <img 
+                           src="https://cdn.pixabay.com/photo/2022/09/27/19/48/ai-generated-7483614_960_720.jpg" 
+                           class="card-img-top" 
+                           alt="Feature 1"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">Feature One</h5>
+                                <p class="card-text">
+                                    This is a simple card with a nice responsive layout.
+                                </p>
+                                <a href="#" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card shadow border-0 mb-4">
+                          <img 
+                             src="https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/6/2017/11/04133712/waterfall.jpg" 
+                             class="card-img-top" 
+                             alt="Feature 2"
+                          />
+                           <div class="card-body">
+                            <h5 class="card-title">Feature Two</h5>
+                            <p class="card-text">
+                                Bootstrap makes responsive design easier.
+                            </p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card shadow border-0 mb-4">
+                         <img 
+                          src="data:image/webp;base64,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" 
+                          class="card-img-top" 
+                          alt="Feature 3"
+                         />
+                          <div class="card-body">
+                                <h5 class="card-title">Feature Three</h5>
+                                <p class="card-text">
+                                    This layout works on desktops, tablets, and mobiles.
+                                </p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                     </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-light text-center">
+            <div class="container">
+                <h2 class="fw-bold">Ready to build your own website?</h2>
+                <p class="lead">Start customizing this template and make it yours.</p>
+                <a href="#" class="btn btn-primary">Start Now</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 MyBrand. All rights reserved.</p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
